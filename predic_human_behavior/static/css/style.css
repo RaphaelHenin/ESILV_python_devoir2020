@@ -26,10 +26,10 @@ body {
 }
 .login { 
 	position: absolute;
-	top: 40%;
-	left: 50%;
+	top: 20%;
+	left: 30%;
 	margin: -150px 0 0 -150px;
-	width:400px;
+	width:1000px;
 	height:400px;
 }
 

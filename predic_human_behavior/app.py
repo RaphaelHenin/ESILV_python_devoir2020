@@ -194,7 +194,7 @@ def predict():
 
     output = prediction[0]
 
-    return render_template('index.html', prediction_text='Sales should be $ {}'.format(output))
+    return render_template('index.html', prediction_text="L'ID de l'activité prédit est : {} ".format(output))
 
 @app.route('/results',methods=['POST'])
 def results():
@@ -202,7 +202,7 @@ def results():
     data = request.get_json(force=True)
     prediction = model.predict([np.array(list(data.values()))])
 
-    output = prediction[0]
+    output = int(prediction[0])
     return jsonify(output)
 
 if __name__ == "__main__":
